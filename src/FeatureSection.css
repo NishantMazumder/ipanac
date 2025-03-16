@@ -18,7 +18,7 @@
   font-weight: 600;
   padding: 0;
   text-transform: uppercase;
-  display: inline-block;
+  display: block ;
   position: relative;
   top: -75px;
   letter-spacing: 2px;
@@ -39,10 +39,11 @@
 .service-badge:hover{
   color: red;
   transform: translate(-2px);
+  background-color: black;
 }
 
 .service-badge:hover::after{
-  width: 75px;
+  width: 197px;
   background-color: #ff3e3e;
 }
 
@@ -99,26 +100,45 @@
   color: #737373;
 }
 
-/* Mobile-specific styles - new code */
+/* Improved Mobile-specific styles */
 @media (max-width: 639px) {
-  .service-badge {
-    font-size: 20px;
-    top: -50px;
+  .feature-section {
+    min-height: auto;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
   }
   
-  .heading {
-    font-size: 24px !important;
-    top: -80px;
+  .feature-container {
+    padding: 0 15px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .service-badge {
+    font-size: 20px;
+    top: 0;
+    position: static;
     margin-bottom: 1rem;
   }
   
+  .heading {
+    font-size: 22px !important;
+    top: 0;
+    position: static;
+    margin-bottom: 2rem;
+  }
+  
   .features-grid {
-    top: -70px;
-    padding: 0 15px;
+    top: 0;
+    position: static;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
   }
   
   .feature-item {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 10px;
   }
   
   .icon-container {
@@ -133,12 +153,11 @@
   
   .feature-description {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
   
-  .feature-section {
-    min-height: auto;
-    padding-bottom: 2rem;
+  .service-badge:hover::after {
+    width: 100px;
   }
 }
 
