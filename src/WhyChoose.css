@@ -1,0 +1,126 @@
+/* Workflow.css */
+
+.workflow-container {
+    margin-top: 5rem;
+  }
+  
+  .workflow-heading {
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-size: 25px !important;
+    font-weight: 600;
+    padding: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    right:-500px;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.3 ease;
+  }
+  
+
+  .workflow-heading::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3.5px;
+    background-color: red;
+    margin: 8px auto 0;
+    transition: all 0.3s ease;
+  }
+  
+  .workflow-heading:hover{
+    color: red;
+    transform: translate(-2px);
+  }
+  
+  .workflow-heading:hover::after{
+    width: 75px;
+    background-color: #ff3e3e;
+  }
+
+
+  .gradient-text {
+    background-image: linear-gradient(to right, red , red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-container {
+    padding: 51.3px 23px;
+    width: 47.2% !important;
+    /* height: 50% !important; */
+    
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .checklist-container {
+    padding-top: 3rem;
+    width: 100%;
+    
+  }
+  
+  .checklist-item {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  
+  .icon-wrapper {
+    color: red;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #171717;
+    height: 36px;
+    width: 36px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+  }
+  
+  .item-content-title {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 17.1px;
+  }
+  
+  .item-content-description {
+    font-size: 1rem;
+    color: #737373;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 640px) {
+    .workflow-heading {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .workflow-heading {
+      font-size: 3.75rem;
+    }
+    
+    .image-container {
+      width: 50%;
+    }
+    
+    .checklist-container {
+      width: 50%;
+    }
+  }

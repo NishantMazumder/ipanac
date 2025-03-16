@@ -1,0 +1,210 @@
+/* Contact Info */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    padding: 5px 0;
+    background-color: #f8f8f8;
+}
+
+.address, .phone, .emailid {
+    padding: 5px 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 12px 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(112, 112, 112, 0.8);
+    background-color: white;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 14px;
+}
+
+/* Navbar Content */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo and Title */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 85px;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    position: relative;
+    padding-bottom: 8px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ff3333;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-item {
+    padding: 0 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgb(88, 88, 88);
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: black;
+}
+
+/* Sign In & Register Buttons */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.sign-in {
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.register {
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    background: linear-gradient(to right, red, red);
+    color: white;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Contact Info */
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .address, .phone, .emailid {
+        padding: 5px 10px;
+    }
+    
+    /* Navbar Content */
+    .navbar-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Logo and Title */
+    .logo-container {
+        align-items: center;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .logo {
+        position: relative;
+        margin-bottom: 5px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    /* Navigation Links */
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav-item {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* Auth Buttons */
+    .auth-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .sign-in, .register {
+        text-align: center;
+        width: 80%;
+    }
+    
+    /* Container */
+    .container {
+        width: 95%;
+    }
+}
+
+/* For even smaller screens */
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 18px;
+    }
+    
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+}

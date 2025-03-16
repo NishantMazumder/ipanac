@@ -1,0 +1,91 @@
+/* Workflow.css */
+
+.workflow-container {
+    margin-top: 5rem;
+  }
+  
+  .workflow-heading {
+    font-size: 1.875rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    letter-spacing: 0.025em;
+  }
+  
+  .gradient-text {
+    background-image: linear-gradient(to right, #f97316, #9a3412);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-container {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .checklist-container {
+    padding-top: 3rem;
+    width: 100%;
+  }
+  
+  .checklist-item {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  
+  .icon-wrapper {
+    color: #4ade80;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: #171717;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+  }
+  
+  .item-content-title {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .item-content-description {
+    font-size: 1rem;
+    color: #737373;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 640px) {
+    .workflow-heading {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .workflow-heading {
+      font-size: 3.75rem;
+    }
+    
+    .image-container {
+      width: 50%;
+    }
+    
+    .checklist-container {
+      width: 50%;
+    }
+  }
