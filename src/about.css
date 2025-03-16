@@ -1,0 +1,40 @@
+
+
+.About{
+    font-size:25px;
+    color: red;
+    text-align: center;
+    margin-top: 32px;
+    font-weight: 600;
+    background-color: transparent;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1.3px;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+}
+
+
+.About::after{
+    content: " ";
+    display: flex;
+    width: 50px;
+    height: 3.5px;
+    background-color: red;
+    margin: 8px auto 0;
+    transition: all 0.3s ease;
+    
+}
+
+.About:hover{
+    background-color: black;
+    transform: translate(-1.9px);
+    cursor: pointer;
+
+}
+
+.About:hover::after{
+    background-color: red;
+    width: 250px;
+}
