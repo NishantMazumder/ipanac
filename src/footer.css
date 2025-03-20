@@ -1,73 +1,77 @@
 .footer-container {
-    margin-top: 80px;
-  }
+  margin-top: 80px;
   
-  .footer {
-    padding-top: -8px;
-    position: relative;
-    bottom: 30px ;
-    padding-left: 50px;
-    margin-top: -50px;
-    
-   
-  }
+}
+
+.footer {
+  padding-top: -8px;
+  position: relative;
+  bottom: 30px ;
+  padding-left: 50px;
+  margin-top: -50px;
+  
+ 
+}
 
 
-  /* Add this to your CSS */
-  .footer-border {
-    border-top: 1px solid #404040;
-    margin-top: -200px; /* Adjust this value to move the line higher */
-  }
+/* Add this to your CSS */
+.footer-border {
+  border-top: 1px solid #404040;
+  margin-top: -220px; /* Changed from -200px to -220px to move the line up */
+}
+
+.footer-content {
+  padding-top: 40px;
+  padding-left: 50px;
+  border-top: red; /* Remove the original border */
+  color: whitesmoke;
+  background-color: black;
+}
+/* This is only for the headings 👆 Explore , Platform , Community */
+
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.copyright-section{
+  text-align: center;
+  margin-top: 55px;
   
-  .footer-content {
-    padding-top: 40px;
-    padding-left: 50px;
-    border-top: red; /* Remove the original border */
-    color: white;
-    background-color: black;
-  }
-  
+  margin-left: -110px;
+
+}
+
+@media (min-width: 1024px) {
   .footer-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+}
 
-  .copyright-section{
-    text-align: center;
-    margin-top: 55px;
-    
-    margin-left: -110px;
+.footer-heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
 
-  }
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   
-  @media (min-width: 1024px) {
-    .footer-grid {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-  
-  .footer-heading {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-  
-  .footer-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-list li {
-    margin-bottom: 8px;
-  }
-  
-  .footer-link {
-    color: #d4d4d4;
-    text-decoration: none;
-  }
-  
-  .footer-link:hover {
-    color: #ffffff;
-  }
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
