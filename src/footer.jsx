@@ -28,7 +28,7 @@ function Footer() {
                             ))}
                         </ul>
                     </div>
-
+{/* 
                     <div>
                         <h3 className="footer-heading">Community</h3>
                         <ul className="footer-list">
@@ -38,7 +38,7 @@ function Footer() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="copyright-section">
                     <p>© Copyright 2024 by abc.com</p>
