@@ -13,7 +13,7 @@ function Workflow() {
       
       <div className="flex-container">
         <div className="image-container">
-          <img src={codeImg} alt="Code" />
+          {/* <img src={codeImg} alt="Code" /> */}
         </div>
         
         <div className="checklist-container">
