@@ -1,6 +1,5 @@
 import React from 'react';
 import './about.css';
-import Footer from './Footer'; // Import the Footer component
 import aboutimg from "./assets/about.png";
 
 function About() {
